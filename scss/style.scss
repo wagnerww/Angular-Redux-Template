@@ -1,0 +1,63 @@
+//variaveis
+$hmenu:10%;
+$hfooter:15%;
+$hmain:calc(100% - (#{$hmenu} + #{$hfooter}));
+
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    height: 100vh;
+    width:100vw;
+    background-color: #484748;
+    font-size: 12px;
+    font-family: sans-serif;
+    color:white;
+}
+
+.right{
+    float: right;
+}
+
+.left{
+    left: 0px;;
+}
+
+.center{
+    justify-content: center;
+}
+
+header{
+    position: relative;
+    width:100%;
+    height: $hmenu;    
+    div:first-child{
+        position: relative;
+        width: 100%;
+        height: 100%;
+        display: grid;
+        grid-template-columns: 0 0 0;
+        align-items: center;
+        
+        
+    }
+    span{
+        font-weight: bold;
+        font-size: 1.25rem;
+    }
+}
+
+main{
+    position: relative;
+    background-color:black;
+    width:100%;
+    height: $hmain;
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: $hfooter;
+}
+
+
