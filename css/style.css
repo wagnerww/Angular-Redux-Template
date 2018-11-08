@@ -14,108 +14,84 @@ body {
   @media screen and (max-width: 1024px) {
     .lb_x1 {
       font-size: calc(1rem / 1); } }
-  @media screen and (max-width: 1000px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.1); } }
   @media screen and (max-width: 900px) {
     .lb_x1 {
-      font-size: calc(1rem / 1.2); } }
+      font-size: calc(1rem / 1.1); } }
   @media screen and (max-width: 800px) {
     .lb_x1 {
       font-size: calc(1rem / 1.3); } }
-  @media screen and (max-width: 750px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.4); } }
   @media screen and (max-width: 700px) {
     .lb_x1 {
-      font-size: calc(1rem / 1.6); } }
+      font-size: calc(1rem / 1.2); } }
   @media screen and (max-width: 640px) {
     .lb_x1 {
-      font-size: calc(1rem / 1.8); } }
+      font-size: calc(1rem / 1.3); } }
   @media screen and (max-width: 480px) {
     .lb_x1 {
-      font-size: calc(1rem / 2); } }
+      font-size: calc(1rem / 1.4); } }
 
 .lb_x1_5 {
   font-size: calc(1.5rem / 1); }
   @media screen and (max-width: 1024px) {
     .lb_x1_5 {
       font-size: calc(1.5rem / 1); } }
-  @media screen and (max-width: 1000px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.1); } }
   @media screen and (max-width: 900px) {
     .lb_x1_5 {
-      font-size: calc(1.5rem / 1.2); } }
+      font-size: calc(1.5rem / 1.1); } }
   @media screen and (max-width: 800px) {
     .lb_x1_5 {
       font-size: calc(1.5rem / 1.3); } }
-  @media screen and (max-width: 750px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.4); } }
   @media screen and (max-width: 700px) {
     .lb_x1_5 {
-      font-size: calc(1.5rem / 1.6); } }
+      font-size: calc(1.5rem / 1.2); } }
   @media screen and (max-width: 640px) {
     .lb_x1_5 {
-      font-size: calc(1.5rem / 1.8); } }
+      font-size: calc(1.5rem / 1.3); } }
   @media screen and (max-width: 480px) {
     .lb_x1_5 {
-      font-size: calc(1.5rem / 2); } }
+      font-size: calc(1.5rem / 1.4); } }
 
 .lb_x2 {
   font-size: calc(2rem / 1); }
   @media screen and (max-width: 1024px) {
     .lb_x2 {
       font-size: calc(2rem / 1); } }
-  @media screen and (max-width: 1000px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.1); } }
   @media screen and (max-width: 900px) {
     .lb_x2 {
-      font-size: calc(2rem / 1.2); } }
+      font-size: calc(2rem / 1.1); } }
   @media screen and (max-width: 800px) {
     .lb_x2 {
       font-size: calc(2rem / 1.3); } }
-  @media screen and (max-width: 750px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.4); } }
   @media screen and (max-width: 700px) {
     .lb_x2 {
-      font-size: calc(2rem / 1.6); } }
+      font-size: calc(2rem / 1.2); } }
   @media screen and (max-width: 640px) {
     .lb_x2 {
-      font-size: calc(2rem / 1.8); } }
+      font-size: calc(2rem / 1.3); } }
   @media screen and (max-width: 480px) {
     .lb_x2 {
-      font-size: calc(2rem / 2); } }
+      font-size: calc(2rem / 1.4); } }
 
 .lb_x2_5 {
   font-size: calc(2.5rem / 1); }
   @media screen and (max-width: 1024px) {
     .lb_x2_5 {
       font-size: calc(2.5rem / 1); } }
-  @media screen and (max-width: 1000px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.1); } }
   @media screen and (max-width: 900px) {
     .lb_x2_5 {
-      font-size: calc(2.5rem / 1.2); } }
+      font-size: calc(2.5rem / 1.1); } }
   @media screen and (max-width: 800px) {
     .lb_x2_5 {
       font-size: calc(2.5rem / 1.3); } }
-  @media screen and (max-width: 750px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.4); } }
   @media screen and (max-width: 700px) {
     .lb_x2_5 {
-      font-size: calc(2.5rem / 1.6); } }
+      font-size: calc(2.5rem / 1.2); } }
   @media screen and (max-width: 640px) {
     .lb_x2_5 {
-      font-size: calc(2.5rem / 1.8); } }
+      font-size: calc(2.5rem / 1.3); } }
   @media screen and (max-width: 480px) {
     .lb_x2_5 {
-      font-size: calc(2.5rem / 2); } }
+      font-size: calc(2.5rem / 1.4); } }
 
 .txt_right {
   float: right;
