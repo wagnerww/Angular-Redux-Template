@@ -27,6 +27,7 @@ $span-map-font-sizes: (
         $font-size:  calc(#{$rem} / #{$dv});
       @if $breakpoint == null {
         font-size: $font-size;
+        
       }
       @else {
         @media screen and (max-width: $breakpoint) {
@@ -129,6 +130,7 @@ main{
     display: grid;
     grid-template-columns: 10fr 1fr 1fr;
     box-sizing: border-box;
+    padding-left: 10px;
    // max-height: 60px;
    height: 75px;
 }
@@ -150,20 +152,45 @@ nav{
 }
 
 //hover
-.icon_button:hover{
+.icon_button_item:hover{
     cursor: pointer;
 }
 
 .main_item:hover{
-    background-color: #484748
-    cursor: pointer;
+    background-color: #484748;
+    //cursor: pointer;
+}
+
+.icon_button_item:active{
+    @include span-font-size($span-map-font-sizes, 1.8rem);
+    color:grey;
 }
 
 //efeitos
 .list{
     position: absolute;
     width: 100%;
-    top:-5px;    
+    top:-5px;
+}
+
+.list_fila{
+    position: absolute;
+    width: 100px;
+    height: 400px;
+    background: white;
+    display:none;
+    z-index: 9;
+}
+
+.list:hover{
+    cursor: pointer;
+    
+    .list_fila{
+        display: block;
+    }
+    .list_fila:hover{
+        display: block;
+    }
 }
 
 .circle{   
