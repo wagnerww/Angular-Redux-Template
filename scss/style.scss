@@ -129,7 +129,8 @@ main{
     display: grid;
     grid-template-columns: 10fr 1fr 1fr;
     box-sizing: border-box;
-    max-height: 60px;
+   // max-height: 60px;
+   height: 75px;
 }
 
 footer{
@@ -148,12 +149,21 @@ nav{
     border-top: #383838 1px solid
 }
 
+//hover
+.icon_button:hover{
+    cursor: pointer;
+}
+
+.main_item:hover{
+    background-color: #484748
+    cursor: pointer;
+}
+
 //efeitos
 .list{
     position: absolute;
     width: 100%;
-    top:-5px;
-    
+    top:-5px;    
 }
 
 .circle{   
@@ -178,6 +188,8 @@ nav{
     padding-left: 50%;
     animation: marquee 10s linear infinite;
 }
+
+
 
 @keyframes marquee {
     0% {

@@ -1,196 +1,48 @@
-body {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  height: 100vh;
-  width: 100vw;
-  background-color: #484748;
-  font-size: 12px;
-  font-family: sans-serif;
-  color: white; }
+/*
+Error: Invalid CSS after "    cursor": expected ";", was ": pointer;"
+        on line 159 of style.scss
 
-.lb_x1 {
-  font-size: calc(1rem / 1); }
-  @media screen and (max-width: 1024px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1); } }
-  @media screen and (max-width: 900px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.1); } }
-  @media screen and (max-width: 800px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.3); } }
-  @media screen and (max-width: 700px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.2); } }
-  @media screen and (max-width: 640px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.3); } }
-  @media screen and (max-width: 480px) {
-    .lb_x1 {
-      font-size: calc(1rem / 1.4); } }
+154:     cursor: pointer;
+155: }
+156: 
+157: .main_item:hover{
+158:     background-color: #484748
+159:     cursor: pointer;
+160: }
+161: 
+162: //efeitos
+163: .list{
+164:     position: absolute;
 
-.lb_x1_5 {
-  font-size: calc(1.5rem / 1); }
-  @media screen and (max-width: 1024px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1); } }
-  @media screen and (max-width: 900px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.1); } }
-  @media screen and (max-width: 800px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.3); } }
-  @media screen and (max-width: 700px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.2); } }
-  @media screen and (max-width: 640px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.3); } }
-  @media screen and (max-width: 480px) {
-    .lb_x1_5 {
-      font-size: calc(1.5rem / 1.4); } }
-
-.lb_x2 {
-  font-size: calc(2rem / 1); }
-  @media screen and (max-width: 1024px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1); } }
-  @media screen and (max-width: 900px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.1); } }
-  @media screen and (max-width: 800px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.3); } }
-  @media screen and (max-width: 700px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.2); } }
-  @media screen and (max-width: 640px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.3); } }
-  @media screen and (max-width: 480px) {
-    .lb_x2 {
-      font-size: calc(2rem / 1.4); } }
-
-.lb_x2_5 {
-  font-size: calc(2.5rem / 1); }
-  @media screen and (max-width: 1024px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1); } }
-  @media screen and (max-width: 900px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.1); } }
-  @media screen and (max-width: 800px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.3); } }
-  @media screen and (max-width: 700px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.2); } }
-  @media screen and (max-width: 640px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.3); } }
-  @media screen and (max-width: 480px) {
-    .lb_x2_5 {
-      font-size: calc(2.5rem / 1.4); } }
-
-.txt_right {
-  float: right;
-  text-align: right; }
-
-.txt_left {
-  float: left;
-  text-align: left; }
-
-.txt_center {
-  text-align: center; }
-
-.center {
-  position: relative;
-  width: 100%;
-  margin: auto;
-  justify-content: center; }
-
-header, .grid, nav {
-  position: relative;
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr; }
-
-.grid_x1 {
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 5px; }
-
-header {
-  padding-right: 20px;
-  padding-left: 20px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 10%; }
-  header span {
-    font-weight: bold; }
-
-main {
-  position: relative;
-  background-color: black;
-  width: 100%;
-  height: calc(100% - (10% + 20%));
-  display: grid;
-  grid-template-columns: 1fr;
-  box-sizing: border-box;
-  padding: 15px;
-  overflow: auto; }
-
-.main_item {
-  display: grid;
-  grid-template-columns: 10fr 1fr 1fr;
-  box-sizing: border-box;
-  max-height: 60px; }
-
-footer {
-  position: relative;
-  width: 100%;
-  height: 20%;
-  box-sizing: border-box;
-  padding-top: 5px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 5px; }
-
-nav {
-  box-sizing: border-box;
-  border-top: #383838 1px solid; }
-
-.list {
-  position: absolute;
-  width: 100%;
-  top: -5px; }
-
-.circle {
-  position: relative;
-  width: 23px;
-  height: 23px;
-  left: 15px;
-  border-radius: 25%;
-  background-color: red;
-  float: right;
-  text-align: center; }
-
-.marquee {
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box; }
-
-.marquee div {
-  display: inline-block;
-  padding-left: 50%;
-  animation: marquee 10s linear infinite; }
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0); }
-  100% {
-    transform: translate(-100%, 0); } }
-
-/*# sourceMappingURL=style.css.map */
+Backtrace:
+style.scss:159
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1278:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1208:in `expected'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1203:in `tok!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:804:in `block in try_declaration'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:1254:in `rethrow'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:809:in `try_declaration'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:732:in `declaration_or_ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:697:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:686:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:678:in `block'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:670:in `ruleset'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:696:in `block_child'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:689:in `block_contents'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:137:in `stylesheet'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/scss/parser.rb:41:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:414:in `_to_tree'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:389:in `_render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/engine.rb:307:in `render_with_sourcemap'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:387:in `run'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/sass_scss.rb:63:in `process_result'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:50:in `parse'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/lib/sass/exec/base.rb:18:in `parse!'
+C:/Ruby25-x64/lib/ruby/gems/2.5.0/gems/sass-3.5.7/bin/sass:13:in `<top (required)>'
+C:/Ruby25-x64/bin/sass:23:in `load'
+C:/Ruby25-x64/bin/sass:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Invalid CSS after \"    cursor\": expected \";\", was \": pointer;\"\A         on line 159 of style.scss\A \A 154:     cursor: pointer;\A 155: }\A 156: \A 157: .main_item:hover{\A 158:     background-color: #484748\A 159:     cursor: pointer;\A 160: }\A 161: \A 162: //efeitos\A 163: .list{\A 164:     position: absolute;"; }
