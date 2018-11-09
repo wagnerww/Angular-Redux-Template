@@ -112,7 +112,9 @@ header, .grid, nav{
 }
 
 .grid_x2{
+    position: relative;
     padding-top: 15px;
+    padding-bottom: 15px;
     display: grid;
     grid-template-columns: 4fr 1fr;
     row-gap: 5px;
@@ -203,13 +205,27 @@ nav{
 
 .list_fila{
     position: absolute;
-    width: 400px;   
+    width: 0px;   
     top:15px;
     background: #484748;
     right: 0px;
     opacity: 0;
     transition: opacity 0.2s linear;      
     z-index: 7;
+    padding-top:5px;
+    padding-bottom: 25px;
+    
+}
+
+.Fila_Item{
+    position: relative;
+    width:100%;
+    height: 100%;
+    overflow: auto;
+}
+
+.Fila_Item > :first-child{
+    border-top: none;
 }
 
 .sobrepor{
@@ -222,6 +238,7 @@ nav{
 }
 
 .lista_icon:hover > .list_fila{
+    width: 350px;
     height: 400px;
     opacity: 1;
 }
