@@ -104,12 +104,21 @@ header, .grid, nav{
     grid-template-columns: 1fr 1fr 1fr;
 }
 
-/*.grid_x1{
+.grid_x1{
     padding-top: 15px;
     display: grid;
     grid-template-columns: 1fr;
     row-gap: 5px;
-}*/
+}
+
+.grid_x2{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    row-gap: 5px;
+    border-top: #383838 1px solid;
+    border-bottom: #383838 1px solid;
+}
 
 header{   
     padding-right: 20px;
@@ -227,6 +236,11 @@ nav{
     float: right;
     text-align: center;
     
+}
+
+.icon_footer{
+    position: relative;
+    width: 105px;
 }
 
 .marquee { 
