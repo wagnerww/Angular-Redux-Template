@@ -6,6 +6,7 @@ $hmain:calc(100% - (#{$hmenu} + #{$hfooter}));
 $lb_x0_5:0.5rem;
 $lb_x1:1rem;
 $lb_x1_5:1.5rem;
+$lb_x1_3:1.3rem;
 $lb_x2:2rem;
 $lb_x2_5:2.5rem;
 $lb_x3:2rem;
@@ -14,12 +15,12 @@ $span-map-font-sizes: (
     null:1,
     1024px: 1,
     //1000px:1.1,
-    900px:1.1,
-    800px:1.3,
+    //900px:1.1,
+    800px:1.1,
     //750px:1.4,
-    700px:1.2,
-    640px:1.3,
-    480px:1.4    
+    //700px:1.2,
+    //640px:1.2,
+    480px:1.2
 );
 
 @mixin span-font-size($span-map, $rem) {
@@ -64,6 +65,10 @@ body{
 
 .lb_x2_5{
     @include span-font-size($span-map-font-sizes, 2.5rem);
+}
+
+.lb_x1_1{
+    @include span-font-size($span-map-font-sizes, 1.1rem);  
 }
 
 //Alinhamentos
@@ -115,11 +120,13 @@ header, .grid, nav{
     position: relative;
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
     display: grid;
     grid-template-columns: 4fr 1fr;
     row-gap: 5px;
     border-top: #383838 1px solid;
     border-bottom: #383838 1px solid;
+    text-align: left;
 }
 
 header{   
@@ -175,8 +182,9 @@ nav{
 }
 
 //hover
-.icon_button_item:hover{
+.icon_button_item:hover, .icon_button_item_1_1:hover, .icon_button_item_2_5:hover{
     cursor: pointer;
+    color:grey;
 }
 
 .main_item:hover{
@@ -186,6 +194,16 @@ nav{
 
 .icon_button_item:active{
     @include span-font-size($span-map-font-sizes, 1.8rem);
+    color:grey;
+}
+
+.icon_button_item_2_5:active{
+    @include span-font-size($span-map-font-sizes, 2.6rem);
+    color:grey;
+}
+
+.icon_button_item_1_1:active{
+    @include span-font-size($span-map-font-sizes, 1.2rem);
     color:grey;
 }
 
@@ -210,18 +228,25 @@ nav{
     background: #484748;
     right: 0px;
     opacity: 0;
-    transition: opacity 0.2s linear;      
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
     z-index: 7;
     padding-top:5px;
     padding-bottom: 25px;
-    
 }
 
-.Fila_Item{
+.Fila_Itens{
     position: relative;
     width:100%;
     height: 100%;
     overflow: auto;
+}
+
+.title_fila{
+    position: relative;
+    width:100%;
+    height: 30px;
+    text-align: center;
 }
 
 .Fila_Item > :first-child{
@@ -233,25 +258,47 @@ nav{
     z-index: 9;
 }
 
+.sobrepor > span{
+    position: relative;
+    right: 8px;
+}
+
 .sobrepor:hover{
     cursor: pointer;
+}
+
+.lista_icon:hover > .sobrepor{
+    opacity: 0.8;
 }
 
 .lista_icon:hover > .list_fila{
     width: 350px;
     height: 400px;
-    opacity: 1;
+    opacity: 1; 
+}
+
+.scroll_fila{
+    position: relative;
+    display: auto;
 }
 
 .circle{   
     position: relative;
-    width: 23px;
-    height: 23px;
+    width: 32px;
+    height: 32px;
     left: 15px;
-    border-radius: 25%;
-    background-color: red;
+    border-radius: 50%;
+    background-color: #2196F3;
     float: right;
     text-align: center;
+    opacity: 0;
+    transition: 0.3s;
+    transition-timing-function: ease-in
+}
+
+.circle > span{
+    position: relative;
+    top: 5px;    
 }
 
 .icon_footer{
@@ -271,6 +318,16 @@ nav{
     animation: marquee 10s linear infinite;
 }
 
+::-webkit-scrollbar-track {
+    background-color: white;
+}
+::-webkit-scrollbar {
+    width: 15px;
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #484748;
+}
 
 @keyframes marquee {
     0% {
