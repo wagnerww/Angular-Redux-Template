@@ -106,7 +106,12 @@ body {
 
 .center {
   position: relative;
-  width: 100%;
+  margin-top: auto;
+  margin-bottom: auto;
+  justify-content: center; }
+
+.center_h_v {
+  position: relative;
   margin: auto;
   justify-content: center; }
 
@@ -116,12 +121,12 @@ header, .grid, nav {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr; }
 
-.grid_x1 {
-  padding-top: 15px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 5px; }
-
+/*.grid_x1{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 5px;
+}*/
 header {
   padding-right: 20px;
   padding-left: 20px;
@@ -161,7 +166,11 @@ footer {
 
 nav {
   box-sizing: border-box;
-  border-top: #383838 1px solid; }
+  border-top: #383838 1px solid;
+  padding-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  row-gap: 5px; }
 
 .icon_button_item:hover {
   cursor: pointer; }
@@ -196,20 +205,31 @@ nav {
   width: 100%;
   top: -5px; }
 
+.lista_icon {
+  position: relative;
+  width: 30px;
+  float: right; }
+
 .list_fila {
   position: absolute;
-  width: 100px;
-  height: 400px;
-  background: white;
-  display: none;
+  width: 400px;
+  top: 15px;
+  background: #484748;
+  right: 0px;
+  opacity: 0;
+  transition: opacity 0.2s linear;
+  z-index: 7; }
+
+.sobrepor {
+  position: relative;
   z-index: 9; }
 
-.list:hover {
+.sobrepor:hover {
   cursor: pointer; }
-  .list:hover .list_fila {
-    display: block; }
-  .list:hover .list_fila:hover {
-    display: block; }
+
+.lista_icon:hover > .list_fila {
+  height: 400px;
+  opacity: 1; }
 
 .circle {
   position: relative;
