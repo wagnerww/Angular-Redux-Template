@@ -9,7 +9,7 @@ $lb_x1_5:1.5rem;
 $lb_x1_3:1.3rem;
 $lb_x2:2rem;
 $lb_x2_5:2.5rem;
-$lb_x3:2rem;
+$lb_x1_1:2rem;
 
 $span-map-font-sizes: (
     null:1,
@@ -52,23 +52,23 @@ body{
 
 //fontes
 .lb_x1{
-    @include span-font-size($span-map-font-sizes, 1rem);
-}
-
-.lb_x1_5{
-    @include span-font-size($span-map-font-sizes, 1.5rem);   
-}
-
-.lb_x2{
-    @include span-font-size($span-map-font-sizes, 2rem);
-}
-
-.lb_x2_5{
-    @include span-font-size($span-map-font-sizes, 2.5rem);
+    @include span-font-size($span-map-font-sizes, $lb_x1);
 }
 
 .lb_x1_1{
-    @include span-font-size($span-map-font-sizes, 1.1rem);  
+    @include span-font-size($span-map-font-sizes, $lb_x1_1);  
+}
+
+.lb_x1_5{
+    @include span-font-size($span-map-font-sizes, $lb_x1_5);   
+}
+
+.lb_x2{
+    @include span-font-size($span-map-font-sizes, $lb_x2);
+}
+
+.lb_x2_5{
+    @include span-font-size($span-map-font-sizes, $lb_x2_5);
 }
 
 //Alinhamentos
@@ -87,16 +87,14 @@ body{
 }
 
 .center{
-    position: relative;   
-    //width: 100%;
+    position: relative;
     margin-top: auto;    
     margin-bottom: auto;
     justify-content: center;
 }
 
 .center_h_v{
-    position: relative;   
-    //width: 100%;
+    position: relative;
     margin: auto;   
     justify-content: center;
 }
@@ -181,7 +179,7 @@ nav{
     row-gap: 5px;
 }
 
-//hover
+//hovers
 .icon_button_item:hover, .icon_button_item_1_1:hover, .icon_button_item_2_5:hover{
     cursor: pointer;
     color:grey;
@@ -192,6 +190,7 @@ nav{
     //cursor: pointer;
 }
 
+//Actives
 .icon_button_item:active{
     @include span-font-size($span-map-font-sizes, 1.8rem);
     color:grey;
@@ -218,7 +217,6 @@ nav{
     position: relative;
     width: 30px;
     float: right;
-   
 }
 
 .list_fila{
@@ -337,10 +335,4 @@ nav{
       transform: translate(-100%, 0);
     }
   }
-
-
-
-
-
-
 
