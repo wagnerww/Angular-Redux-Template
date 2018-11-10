@@ -10,16 +10,64 @@ body {
   color: white; }
 
 .lb_x1 {
-  font-size: 1rem; }
+  font-size: calc(1rem / 1); }
+  @media screen and (max-width: 1024px) {
+    .lb_x1 {
+      font-size: calc(1rem / 1); } }
+  @media screen and (max-width: 800px) {
+    .lb_x1 {
+      font-size: calc(1rem / 1.1); } }
+  @media screen and (max-width: 480px) {
+    .lb_x1 {
+      font-size: calc(1rem / 1.2); } }
+
+.lb_x1_1 {
+  font-size: calc(1.1rem / 1); }
+  @media screen and (max-width: 1024px) {
+    .lb_x1_1 {
+      font-size: calc(1.1rem / 1); } }
+  @media screen and (max-width: 800px) {
+    .lb_x1_1 {
+      font-size: calc(1.1rem / 1.1); } }
+  @media screen and (max-width: 480px) {
+    .lb_x1_1 {
+      font-size: calc(1.1rem / 1.2); } }
 
 .lb_x1_5 {
-  font-size: 1.5rem; }
+  font-size: calc(1.5rem / 1); }
+  @media screen and (max-width: 1024px) {
+    .lb_x1_5 {
+      font-size: calc(1.5rem / 1); } }
+  @media screen and (max-width: 800px) {
+    .lb_x1_5 {
+      font-size: calc(1.5rem / 1.1); } }
+  @media screen and (max-width: 480px) {
+    .lb_x1_5 {
+      font-size: calc(1.5rem / 1.2); } }
 
 .lb_x2 {
-  font-size: 2rem; }
+  font-size: calc(2rem / 1); }
+  @media screen and (max-width: 1024px) {
+    .lb_x2 {
+      font-size: calc(2rem / 1); } }
+  @media screen and (max-width: 800px) {
+    .lb_x2 {
+      font-size: calc(2rem / 1.1); } }
+  @media screen and (max-width: 480px) {
+    .lb_x2 {
+      font-size: calc(2rem / 1.2); } }
 
 .lb_x2_5 {
-  font-size: 2.5rem; }
+  font-size: calc(2.5rem / 1); }
+  @media screen and (max-width: 1024px) {
+    .lb_x2_5 {
+      font-size: calc(2.5rem / 1); } }
+  @media screen and (max-width: 800px) {
+    .lb_x2_5 {
+      font-size: calc(2.5rem / 1.1); } }
+  @media screen and (max-width: 480px) {
+    .lb_x2_5 {
+      font-size: calc(2.5rem / 1.2); } }
 
 .txt_right {
   float: right;
