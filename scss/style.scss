@@ -1,7 +1,7 @@
 //variaveis
-$hmenu:10%;
-$hfooter:20%;
-$hmain:calc(100% - (#{$hmenu} + #{$hfooter}));
+$hmenu:75px;
+$hfooter:100px;
+//$hmain:calc(1 - (#{$hmenu} + #{$hfooter}));
 
 $lb_x0_5:0.5rem;
 $lb_x1:1rem;
@@ -14,12 +14,7 @@ $lb_x1_1:1.1rem;
 $span-map-font-sizes: (
     null:1,
     1024px: 1,
-    //1000px:1.1,
-    //900px:1.1,
     800px:1.1,
-    //750px:1.4,
-    //700px:1.2,
-    //640px:1.2,
     480px:1.2
 );
 
@@ -38,6 +33,12 @@ $span-map-font-sizes: (
     }
   }
 
+ * {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+  }
+
 body{
     margin: 0px;
     padding: 0px;
@@ -48,6 +49,15 @@ body{
     font-size: 12px;
     font-family: sans-serif;
     color:white;
+}
+
+.app{
+    position: relative;
+    max-height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 75px 1fr 130px;
+    grid-template-areas: "header" "main" "footer";
 }
 
 //fontes
@@ -102,7 +112,7 @@ body{
 //containers
 header, .grid, nav{
     position: relative;
-    width: 100%;
+   // width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
 }
@@ -131,8 +141,7 @@ header{
     padding-right: 20px;
     padding-left: 20px;
     box-sizing: border-box;
-    width:100%;
-    height: $hmenu;
+    grid-area: header;
     span{
         font-weight: bold;       
     }
@@ -141,10 +150,7 @@ header{
 main{
     position: relative;
     background-color:black;
-    width:100%;
-    height: $hmain;
-    display: grid;
-    grid-template-columns: 1fr;
+    grid-area: main;
     box-sizing: border-box;
     padding: 15px;
     overflow: auto;
@@ -155,18 +161,14 @@ main{
     grid-template-columns: 10fr 1fr 1fr;
     box-sizing: border-box;
     padding-left: 10px;
-   // max-height: 60px;
     height: 75px;
 }
 
 footer{
     position: relative;
-    width: 100%;
-    height: $hfooter;
+    grid-area: footer;
     box-sizing: border-box;
     padding-top: 5px;
-    display: grid;
-    grid-template-columns: 1fr;
     row-gap: 5px;
 }
 
